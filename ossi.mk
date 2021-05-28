@@ -292,6 +292,9 @@ PRODUCT_PACKAGES += \
     TelephonyOverlay \
     CarrierConfigOverlay
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
