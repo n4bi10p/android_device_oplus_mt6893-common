@@ -75,8 +75,6 @@ on late-init
     write /sys/kernel/rcu_expedited 1
 
 on charger
-    exec /system/bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
-    mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
@@ -106,11 +104,6 @@ on charger
 
     chmod 0664 /sys/class/oplus_chg/battery/soc_ajust
     chown system system /sys/class/oplus_chg/battery/soc_ajust
-    chown system system /sys/class/leds/lcd-backlight/brightness
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/green/brightness
-
-    start vendor.light-default
 
 service swap_enable_init /vendor/bin/sh /vendor/bin/swap_enable.sh configure_memory_parameters
     user root
@@ -1033,3 +1026,13 @@ service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_el
     class hal
     user secure_element
     group secure_element
+
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics wakelock input
+    capabilities SYS_BOOT
+    file /dev/kmsg w
+    file /sys/fs/pstore/console-ramoops-0 r
+    file /sys/fs/pstore/console-ramoops r
+    file /proc/last_kmsg r
