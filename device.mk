@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX3031
+DEVICE_PATH := device/oneplus/denniz
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -25,7 +25,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/RMX3031/RMX3031-vendor.mk)
+$(call inherit-product, vendor/oneplus/denniz/denniz-vendor.mk)
 $(call inherit-product, device/oplus/camera/camera.mk)
 $(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
@@ -219,7 +219,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.RMX3031
+    android.hardware.light-service.denniz
 
 # Media
 PRODUCT_PACKAGES += \
@@ -435,7 +435,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service-multihal.RMX3031 \
+    android.hardware.sensors@2.0-service-multihal.denniz \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
     android.hardware.sensors@2.1.vendor \

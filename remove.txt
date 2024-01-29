@@ -1,9 +1,9 @@
-device/realme
-kernel/realme
+device/oneplus
+kernel/oneplus
 packages/apps/prebuilt-apps
 device/mediatek/sepolicy_vndr
 packages/apps/RealmeParts
-vendor/realme
+vendor/oneplus
 packages/apps/PocketMode
 hardware/lineage/compat
 device/oplus

@@ -1,4 +1,4 @@
-package org.realme.rmx3031.disablehwoverlays;
+package org.oneplus.rmx3031.disablehwoverlays;
 
 import android.content.Intent;
 import android.app.Service;

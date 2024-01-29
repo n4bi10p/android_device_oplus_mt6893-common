@@ -1,7 +1,7 @@
-Device tree for the Realme X7 Max (RMX3031 and RMX3033)
+Device tree for the Realme X7 Max (denniz and RMX3033)
 =================================================
 
-The Realme X7 Max 8/128GB Codename is RMX3031 and Realme X7 Max 12/256GB Codename is RMX3033
+The Realme X7 Max 8/128GB Codename is denniz and Realme X7 Max 12/256GB Codename is RMX3033
 
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |

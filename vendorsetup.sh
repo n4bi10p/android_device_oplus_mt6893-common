@@ -1,8 +1,8 @@
 if [ -n "${CLEAN_DT_REPOS}" ]; then
     if [ "$CLEAN_DT_REPOS" = "True" ]; then
         echo "Cleaning old repos before cloning"
-        rm -rf vendor/realme
-        rm -rf kernel/realme
+        rm -rf vendor/oneplus
+        rm -rf kernel/oneplus
         rm -rf packages/apps/prebuilt-apps
         rm -rf device/mediatek/sepolicy_vndr
         rm -rf device/oplus
@@ -15,11 +15,11 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
     fi
 fi
 echo start cloning repos
-VT=vendor/realme/RMX3031/RMX3031-vendor.mk
-if ! [ -a $VT ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031 -b RMUI4-OSS vendor/realme/RMX3031
+VT=vendor/oneplus/denniz/denniz-vendor.mk
+if ! [ -a $VT ]; then git clone https://github.com/nishant6342/vendor_oneplus_denniz -b RMUI4-OSS vendor/oneplus/denniz
 fi
-KT=kernel/realme/RMX3031/Makefile
-if ! [ -a $KT ]; then git clone --depth=1 https://github.com/nishant6342/kernel_realme_RMX3031 -b T kernel/realme/RMX3031
+KT=kernel/oneplus/denniz/Makefile
+if ! [ -a $KT ]; then git clone --depth=1 https://github.com/nishant6342/kernel_oneplus_denniz -b T kernel/oneplus/denniz
 fi
 PA=packages/apps/prebuilt-apps/prebuilt-apps.mk
 if ! [ -a $PA ]; then git clone --depth=1 https://gitlab.com/nishant6342/packages_apps_prebuilt-apps packages/apps/prebuilt-apps/
@@ -33,8 +33,8 @@ fi
 POCKET=packages/apps/PocketMode/pocket_mode.mk
 if ! [ -a $POCKET ]; then git clone https://github.com/nishant6342/packages_apps_PocketMode packages/apps/PocketMode
 fi
-FW=vendor/realme/RMX3031-firmware/Android.mk
-if ! [ -a $FW ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031-firmware vendor/realme/RMX3031-firmware
+FW=vendor/oneplus/denniz-firmware/Android.mk
+if ! [ -a $FW ]; then git clone https://github.com/nishant6342/vendor_oneplus_denniz-firmware vendor/oneplus/denniz-firmware
 fi
 CAM=device/oplus/camera/camera.mk
 if ! [ -a $CAM ]; then git clone --depth=1 https://gitlab.com/nishant6342/device_oplus_camera device/oplus/camera
