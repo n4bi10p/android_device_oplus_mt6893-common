@@ -67,4 +67,7 @@ def OTA_InstallEnd(info, incremental):
     for part in bin_map[_bin]:
       fw_cmd += 'package_extract_file("{}.bin", "/dev/block/by-name/{}");\n'.format(_bin, part)
 
+  # Radio
+  fw_cmd += 'package_extract_file("md1img.img", "/dev/block/by-name/md1img");\n'
+
   info.script.AppendExtra(fw_cmd)
