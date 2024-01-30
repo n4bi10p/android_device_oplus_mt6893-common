@@ -2800,12 +2800,30 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
+-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
+-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl-mtk@1.0.so
+-vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-mtk.so
+-vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl-mtk@1.0.so
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
 # Modules ( configs )
+vendor/etc/init/hw/factory_init.connectivity.common.rc
+vendor/etc/init/hw/factory_init.connectivity.rc
+vendor/etc/init/hw/factory_init.project.rc
+vendor/etc/init/hw/factory_init.rc
+vendor/etc/init/hw/init.aee.rc
+vendor/etc/init/hw/init.ago.rc
+vendor/etc/init/hw/init.cgroup.rc
+vendor/etc/init/hw/meta_init.connectivity.common.rc
+vendor/etc/init/hw/meta_init.connectivity.rc
+vendor/etc/init/hw/meta_init.modem.rc
+vendor/etc/init/hw/meta_init.project.rc
+vendor/etc/init/hw/meta_init.rc
+vendor/etc/init/hw/meta_init.vendor.rc
+vendor/etc/init/hw/multi_init.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
