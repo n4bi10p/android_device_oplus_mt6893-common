@@ -112,8 +112,8 @@ PRODUCT_COPY_FILES += $(TARGET_PREBUILT_DTB):dtb.img
 endif
 
 # Kernel Modules
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/modules/*.ko)
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/modules/modules.load))
+BOARD_VENDOR_KERNEL_MODULES :=  $(foreach module,$(BOARD_VENDOR_KERNEL_MODULES_LOAD),$(DEVICE_PATH)-kernel/modules/$(module))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_KERNEL_MODULES_LOAD)
 
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
