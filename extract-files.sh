@@ -67,6 +67,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.wifi@1.0-service-lazy)
             "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
             ;;
+        lib64/libem_support_jni.so)
+            "${PATCHELF}" --add-needed "libjni_shim.so" "${2}"
+            ;;
         vendor/bin/mnld)
             ;&
         vendor/lib64/libaalservice.so)
