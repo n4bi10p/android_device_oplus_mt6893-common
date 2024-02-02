@@ -38,6 +38,10 @@ include $(DEVICE_PATH)/configs/props/logtag.mk
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    alert-slider_daemon
+
 # Screen Density
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
