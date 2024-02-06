@@ -6,6 +6,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Whether device has SuperDart charging support -->
-    <string name="config_SuperDartAndVoocCharger_path">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
+    <string name="config_SuperDartAndVoocCharger_path">/sys/class/oplus_chg/battery/voocchg_ing</string>
 
 </resources>
