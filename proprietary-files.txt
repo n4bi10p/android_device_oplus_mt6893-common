@@ -3107,12 +3107,10 @@ odm/etc/sensor/sensor_config.json
 odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
 vendor/lib/libSensorSave.so
-vendor/lib/libsensorndkbridge.so|8be23c73acf8db5b1a3c8d345b476f1970d46694
 vendor/lib/librgbwlightsensor.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6893.so
 vendor/lib64/libSensorSave.so
-vendor/lib64/libsensorndkbridge.so|8cf5cf696bae60606edbdc7b673f95232728007d
 vendor/lib64/libhwm-oplus.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
