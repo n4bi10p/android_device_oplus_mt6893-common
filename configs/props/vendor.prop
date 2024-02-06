@@ -298,7 +298,7 @@ debug.sf.high_fps.hwc.min.duration=7500000
 debug.sf.latch_unsignaled=true
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_hwc_vds=0
-persist.sys.sf.color_saturation=1.22
+persist.sys.sf.color_saturation=0.88
 
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=1
