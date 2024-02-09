@@ -2909,8 +2909,8 @@ vendor/lib64/libtflite_mtk.so
 # NFC
 odm/etc/init/init.SN100x.nfc.rc
 odm/etc/init/init.SN100x.se.rc
-odm/etc/nfc/libnfc-mtp-SN100.conf_20662:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_20662:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN100.conf_20817:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_20817:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf
 odm/etc/nfc/nfc_conf_ref
 odm/etc/nfc/nfc_fw_ref
