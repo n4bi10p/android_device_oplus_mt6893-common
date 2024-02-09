@@ -2944,21 +2944,8 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # ORMS
--framework/vendor.oplus.hardware.ormsHalService-V1-java.jar
-odm/bin/hw/vendor.oplus.hardware.ormsHalService-aidl-service
-odm/etc/init/ormsHalService-default.rc
-odm/etc/orms/orms_permission_config.xml
--odm/etc/vintf/manifest/ormsHalService-default.xml
--odm/framework/vendor.oplus.hardware.orms-V1.0-java.jar
--odm/framework/vendor.oplus.hardware.orms.ormsHalService-V1.0-java.jar
-odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so
 odm/lib/vendor.oplus.hardware.orms@1.0.so
-odm/lib/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
-odm/lib64/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so
-system_ext/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so
-system_ext/lib/vendor.oplus.hardware.orms@1.0.so
 vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
