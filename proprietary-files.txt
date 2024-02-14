@@ -1579,6 +1579,7 @@ vendor/lib64/libmtkspparser.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
+vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libocam_common.so
 vendor/lib64/liboplus.aishutter.so
 vendor/lib64/liboplus_audio_config.so
