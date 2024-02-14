@@ -52,8 +52,11 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
-        odm/lib*/libui)
+        odm/lib*/libui_oplus.so)
             "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
+            ;;
+        vendor/lib*/libmtkisp_metadata.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui_oplus.so" "${2}"
             ;;
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
