@@ -79,6 +79,7 @@ genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup131    
 genfscon sysfs /devices/platform/10800000.adsp_core0/wakeup/wakeup13                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup/wakeup111                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup176                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:oplus,track-charge/track/wakeup/wakeup146          u:object_r:sysfs_wakeup:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/11cb1000.i2c9/i2c-9/9-005a/leds/vibrator/duration  u:object_r:sysfs_vibrator:s0
