@@ -287,6 +287,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     SystemUIOverlay \
     SettingsOverlay \
+    SettingsProviderOverlayDenniz \
     TelephonyOverlay \
     CarrierConfigOverlay
 
