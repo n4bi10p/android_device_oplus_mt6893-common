@@ -38,7 +38,7 @@ FW=vendor/oneplus/denniz-firmware/Android.mk
 if ! [ -a $FW ]; then git clone https://github.com/nattolecats/android_vendor_oneplus_denniz-firmware vendor/oneplus/denniz-firmware
 fi
 CAM=device/oplus/camera/camera.mk
-if ! [ -a $CAM ]; then git clone --depth=1 https://gitlab.com/nishant6342/device_oplus_camera device/oplus/camera
+if ! [ -a $CAM ]; then git clone --depth=1 https://gitlab.com/nattolecats/device_oplus_camera device/oplus/camera
 fi
 COMPACT=hardware/lineage/compat/Android.bp
 if ! [ -a $COMPACT ]; then git clone https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
