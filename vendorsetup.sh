@@ -5,6 +5,7 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
         rm -rf kernel/oneplus
         rm -rf packages/apps/prebuilt-apps
         rm -rf device/mediatek/sepolicy_vndr
+        rm -rf vendor/oneplus/denniz-firmware
         rm -rf device/oplus
         rm -rf packages/apps/RealmeParts
         rm -rf packages/apps/PocketMode
@@ -35,7 +36,7 @@ POCKET=packages/apps/PocketMode/pocket_mode.mk
 if ! [ -a $POCKET ]; then git clone https://github.com/nishant6342/packages_apps_PocketMode packages/apps/PocketMode
 fi
 FW=vendor/oneplus/denniz-firmware/Android.mk
-if ! [ -a $FW ]; then git clone https://github.com/nattolecats/android_vendor_oneplus_denniz-firmware vendor/oneplus/denniz-firmware
+if ! [ -a $FW ]; then git clone https://gitlab.com/nattolecats/android_vendor_oneplus_denniz-firmware vendor/oneplus/denniz-firmware
 fi
 CAM=device/oplus/camera/camera.mk
 if ! [ -a $CAM ]; then git clone --depth=1 https://gitlab.com/nattolecats/device_oplus_camera device/oplus/camera
