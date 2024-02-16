@@ -46,14 +46,28 @@ def OTA_InstallEnd(info, incremental):
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental)
   AddImage(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system", incremental)
   AddImage(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor", incremental)
-  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
 
   bin_map = {
-      'lk': ['lk'],
-      'lk2': ['lk2']
+      'logo': ['logo']
   }
 
-  pl = 'preloader'
+  img_map = {
+      'audio_dsp': ['audio_dsp'],
+      'cam_vpu1': ['cam_vpu1'],
+      'cam_vpu2': ['cam_vpu2'],
+      'cam_vpu3': ['cam_vpu3'],
+      'dtbo': ['dtbo'],
+      'gz': ['gz1', 'gz2'],
+      'lk': ['lk', 'lk2'],
+      'md1img': ['md1img'],
+      'scp': ['scp1', 'scp2'],
+      'spmfw': ['spmfw'],
+      'sspm': ['sspm_1', 'sspm_2'],
+      'tee1': ['tee1'],
+      'tee2': ['tee2']
+  }
+
+  pl = 'preloader_ufs'
   pl_part = ['sda', 'sdb']
 
   fw_cmd = 'ui_print("Patching radio images unconditionally...");\n'
@@ -62,12 +76,14 @@ def OTA_InstallEnd(info, incremental):
   for part in pl_part:
       fw_cmd += 'package_extract_file("{}.img", "/dev/block/{}");\n'.format(pl, part)
 
+  for img in img_map.keys():
+    AddImageOnly(info, '{}.img'.format(img), incremental, True)
+    for part in img_map[img]:
+      fw_cmd += 'package_extract_file("{}.img", "/dev/block/platform/bootdevice/by-name/{}");\n'.format(img, part)
+
   for _bin in bin_map.keys():
     AddImageOnly(info, '{}.bin'.format(_bin), incremental, True)
     for part in bin_map[_bin]:
-      fw_cmd += 'package_extract_file("{}.bin", "/dev/block/by-name/{}");\n'.format(_bin, part)
-
-  # Radio
-  fw_cmd += 'package_extract_file("md1img.img", "/dev/block/by-name/md1img");\n'
+      fw_cmd += 'package_extract_file("{}.bin", "/dev/block/platform/bootdevice/by-name/{}");\n'.format(_bin, part)
 
   info.script.AppendExtra(fw_cmd)
