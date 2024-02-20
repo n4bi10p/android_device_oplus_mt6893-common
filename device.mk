@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libdrm
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
