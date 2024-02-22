@@ -73,7 +73,7 @@ genfscon sysfs /devices/platform/19030000.vpu_core0/wakeup/wakeup169            
 genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup130                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup/wakeup110                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup175                u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11d04000.i2c8/i2c-8/8-0028/wakeup/wakeup139                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11cb1000.i2c9/i2c-9/9-0028/wakeup/wakeup139                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19032000.vpu_core2/wakeup/wakeup171                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup131                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10800000.adsp_core0/wakeup/wakeup13                        u:object_r:sysfs_wakeup:s0
