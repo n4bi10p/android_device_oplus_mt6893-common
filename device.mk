@@ -195,6 +195,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.safe_union@1.0.vendor \
     libhidltransport \
     libhardware \
     libhwbinder \
