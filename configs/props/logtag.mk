@@ -236,4 +236,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.SurfaceControl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.GraphicBuffer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.BatteryStatsHistory=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.sensors-hal-OriginChannel=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.sensors-hal-OriginChannel=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.MDP=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.AISPQSelector=$(VENDOR_LOG_LEVEL)
