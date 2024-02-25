@@ -270,6 +270,9 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.denniz                                  u:object_r:hal_light_default_exec:s0
 
+# Vibrator
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service.denniz                               u:object_r:hal_vibrator_default_exec:s0
+
 # Nfc
 /dev/nq-nci                                                                                             u:object_r:nfc_device:s0
 

@@ -512,7 +512,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.denniz
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
