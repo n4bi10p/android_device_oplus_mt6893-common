@@ -32,14 +32,6 @@ int read_tristate() {
     return atoi(p);
 }
 
-void vibrator_click() {
-    int fd = open("/sys/class/leds/vibrator/motor_old", O_WRONLY);
-    if (fd != -1) {
-        write(fd, "1", 1);
-        close(fd);
-    }
-}
-
 int main() {
     int fd = -1;
     for (int i = 0; i < 255; i++) {
@@ -72,6 +64,5 @@ int main() {
         } else if (state == 3) {
             system("service call audio 42 i32 2 s16 android");
         }
-        vibrator_click();
     }
 }
