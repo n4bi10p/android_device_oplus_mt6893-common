@@ -37,4 +37,4 @@ vendor.mediatek.hardware.mtkradioex.voice.IMtkRadioExVoice/slot4                
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot1                                u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot2                                u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot3                                u:object_r:hal_radio_service:s0
-vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot4                                u:object_r:hal_radio_service:s
+vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot4                                u:object_r:hal_radio_service:s0
