@@ -435,7 +435,8 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     DozeOverlaySystem \
     DozeOverlaySystemUI \
-    OplusDozeOverlay
+    OplusDozeOverlay \
+    OPlusSettingsResTarget
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
