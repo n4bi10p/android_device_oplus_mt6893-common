@@ -370,8 +370,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
+$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
+
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     libmtkperf_client_vendor \
     libmtkperf_client
@@ -468,8 +469,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     $(COMMON_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel \
     hardware/mediatek \
     hardware/oplus
 
