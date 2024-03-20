@@ -86,7 +86,7 @@ def OTA_InstallEnd(info, incremental):
     for part in bin_map[_bin]:
       fw_cmd += 'package_extract_file("{}.bin", "/dev/block/platform/bootdevice/by-name/{}");\n'.format(_bin, part)
 
-  fw_cmd += 'ui_print("Flashing new reocvery image...");\n'
+  fw_cmd += 'ui_print("Flashing new recovery image...");\n'
   fw_cmd += 'package_extract_file("recovery.img", "/dev/block/by-name/recovery");'
 
   info.script.AppendExtra(fw_cmd)
