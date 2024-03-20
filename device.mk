@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OplusDoze
 
+# AODHelper
+PRODUCT_PACKAGES += \
+    AODHelper
+
 # MTK InCallService
 PRODUCT_PACKAGES += \
     MtkInCallService
