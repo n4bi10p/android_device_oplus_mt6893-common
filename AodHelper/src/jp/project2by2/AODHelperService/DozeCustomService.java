@@ -16,6 +16,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.IBinder;
+import android.os.UserHandle;
 import android.util.Log;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -112,7 +113,7 @@ public class DozeCustomService extends Service {
         // Pulse it the doze.
         Intent intent = new Intent("com.android.systemui.doze.pulse");
         intent.setPackage("com.android.systemui");
-        mContext.sendBroadcast(intent);
+        mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT);
     }
     
     private BroadcastReceiver mScreenStateReceiver = new BroadcastReceiver() {
