@@ -1741,6 +1741,57 @@
             <item value="406" />
         </string-array>
     </carrier_config>
+    <!-- JP Carriers -->
+    <carrier_config operator="SOFTBANK">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="config_oplus_hide_2g_only" value="true" />
+        <int name="dpmFdDelayIdleTime" value="0" />
+        <int name="dpmFdScreenOnIdleTime" value="7" />
+        <int name="dpmFdmScreenOffIdleTime" value="7" />
+        <int name="dpmFdTetheringIdleTime" value="7" />
+        <string name="display_hd_plus_icon_type">19,20</string>
+        <string-array name="mccmnc" num="1">
+            <item value="44020" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="DOCOMO">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="44010" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="KDDI">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="config_oplus_support_volte_only_bool" value="true" />
+        <string name="carrier_oplus_ims_user_agent">[B] [M]</string>
+        <int name="oplus_carrier_mtu" value="1440" />
+        <string-array name="mccmnc" num="3">
+            <item value="44050" />
+            <item value="44051" />
+            <item value="44052" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Rakuten Mobile(MNO)">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="support_ims_conference_call_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
+        <boolean name="config_oplus_hide_3g_2g" value="true" />
+        <string name="carrier_oplus_ims_user_agent">[B]_[M]</string>
+        <int name="oplus_carrier_mtu" value="1420" />
+        <string-array name="mccmnc" num="1">
+            <item value="44011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="20" operator="UQ mobile">
+        <string-array name="mccmnc" num="3">
+            <item value="44050" />
+            <item value="44051" />
+            <item value="44054" />
+        </string-array>
+    </carrier_config>
     <!-- PA: Do not allow 5G NSA on Jio --> 
     <carrier_config mcc="405" mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874"> 
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
