@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oneplus/denniz
+COMMON_PATH := device/oplus/mt6893-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -55,9 +55,6 @@ ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 
-# Assertation
-TARGET_OTA_ASSERT_DEVICE := denniz,OP515BL1
-
 # Bootloader
 TARGET_BOARD_PLATFORM := mt6893
 TARGET_BOOTLOADER_BOARD_NAME := oplus6893
@@ -72,9 +69,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Compatibility matrix
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -93,26 +90,17 @@ BOARD_DTB_OFFSET := 0x07c08000
 
 BOARD_BOOT_HEADER_VERSION := 2
 
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_SOURCE := kernel/oneplus/denniz
-TARGET_KERNEL_CONFIG := denniz_defconfig
+TARGET_KERNEL_SOURCE := kernel/oplus/mt6893
 TARGET_KERNEL_CLANG_VERSION := r487747
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
-TARGET_KERNEL_ADDITIONAL_FLAGS := KBUILD_BUILD_USER="lahaina" KBUILD_BUILD_HOST=origin LLVM=1 LLVM_IAS=1 DEPMOD=depmod CC=clang
+TARGET_KERNEL_ADDITIONAL_FLAGS := KBUILD_BUILD_USER=$(shell whoami) KBUILD_BUILD_HOST=origin LLVM=1 LLVM_IAS=1 DEPMOD=depmod CC=clang
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     kheaders.ko \
     lcd.ko \
     tcp_westwood.ko
-
-# DTB
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtbs
-TARGET_PREBUILT_DTB := $(BOARD_PREBUILT_DTBIMAGE_DIR)/denniz.dtb
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := 
-BOARD_KERNEL_SEPARATED_DTBO := 
 
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -157,9 +145,9 @@ BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := main
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/double_tap_enable
@@ -167,35 +155,31 @@ TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/double_tap_enable
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6893
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6893
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
-# Init
-TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_denniz
-TARGET_RECOVERY_DEVICE_MODULES ?= init_denniz
-
 # Ril
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-03-05
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-BOARD_SEPOLICY_DIRS  += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+BOARD_SEPOLICY_DIRS  += $(COMMON_PATH)/sepolicy/vendor
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
-SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := $(DEVICE_PATH)/touch/include
+SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := $(COMMON_PATH)/touch/include
 
 # Vibrator
 TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
@@ -216,3 +200,6 @@ WIFI_DRIVER_STATE_ON := 1
 WIFI_DRIVER_STATE_OFF := 0
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
+# inherit from the proprietary version
+include vendor/oplus/mt6893-common/BoardConfigVendor.mk

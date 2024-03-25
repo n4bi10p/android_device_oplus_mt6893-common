@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light-service.denniz",
-    init_rc: ["android.hardware.light-service.denniz.rc"],
-    vintf_fragments: ["android.hardware.light-service.denniz.xml"],
+    name: "android.hardware.light-service.mt6893",
+    init_rc: ["android.hardware.light-service.mt6893.rc"],
+    vintf_fragments: ["android.hardware.light-service.mt6893.xml"],
     relative_install_path: "hw",
     srcs: [
         "main.cpp",

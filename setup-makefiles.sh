@@ -18,8 +18,8 @@
 
 set -e
 
-export DEVICE=denniz
-export VENDOR=oneplus
+export DEVICE=mt6893-common
+export VENDOR=oplus
 
 INITIAL_COPYRIGHT_YEAR=2021
 
@@ -40,7 +40,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
 # Copyright headers and guards
-write_headers "denniz"
+write_headers "mt6893"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

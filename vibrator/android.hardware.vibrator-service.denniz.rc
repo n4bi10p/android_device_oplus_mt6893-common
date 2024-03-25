@@ -1,4 +1,0 @@
-service vendor.vibrator-denniz /vendor/bin/hw/android.hardware.vibrator-service.denniz
-    class hal
-    user system
-    group system

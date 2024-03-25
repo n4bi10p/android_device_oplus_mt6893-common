@@ -18,8 +18,8 @@
 
 set -e
 
-export DEVICE=denniz
-export VENDOR=oneplus
+export DEVICE=mt6893-common
+export VENDOR=oplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -36,8 +36,7 @@ source "${HELPER}"
 
 function blob_fixup {
     case "$1" in
-        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so|\
-        vendor/lib*/libmtkcam_stdutils.so)
+        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
@@ -48,15 +47,6 @@ function blob_fixup {
             ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
-            ;;
-        vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
-            grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
-            ;;
-        odm/lib*/libui_oplus.so)
-            "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
-            ;;
-        vendor/lib*/libmtkisp_metadata.so)
-            "${PATCHELF}" --replace-needed "libui.so" "libui_oplus.so" "${2}"
             ;;
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
@@ -73,11 +63,9 @@ function blob_fixup {
         vendor/bin/mnld)
             ;&
         vendor/lib64/libaalservice.so)
-            ;&
-        vendor/lib64/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v30.so" "${2}"
             ;;
-  esac
+    esac
 }
 
 # Default to sanitizing the vendor folder before extraction

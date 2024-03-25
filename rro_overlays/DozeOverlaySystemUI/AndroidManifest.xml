@@ -17,7 +17,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         android:compileSdkVersion="31"
         android:compileSdkVersionCodename="12"
-        package="com.oneplus.doze.overlay_systemui"
+        package="com.oplus.doze.overlay_systemui"
         platformBuildVersionCode="31"
         platformBuildVersionName="12">
 

@@ -1,4 +1,4 @@
-package org.oneplus.rmx3031.disablehwoverlays;
+package org.oplus.mt6893.disablehwoverlays;
 
 import android.content.BroadcastReceiver;
 import android.content.Intent;

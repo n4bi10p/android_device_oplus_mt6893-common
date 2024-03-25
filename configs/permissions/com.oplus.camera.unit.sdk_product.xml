@@ -75,7 +75,7 @@
 
     </privapp-permissions>
 
-    <privapp-permissions package="com.oneplus.gallery">
+    <privapp-permissions package="com.oplus.gallery">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="oplus.permission.OPLUS_COMPONENT_SAFE"/>

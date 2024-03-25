@@ -163,7 +163,7 @@
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="config_oplus_hide_2g_only" value="true" />
         <int name="oplus.operator.ringtone" value="2" />
-        <string name="carrier_ims_user_agent">oneplus_[M]_[S]</string>
+        <string name="carrier_ims_user_agent">oplus_[M]_[S]</string>
         <string-array name="mccmnc" num="1">
             <item value="46697" />
         </string-array>
@@ -173,7 +173,7 @@
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="config_oplus_lte_preferred_for_second_slot" value="true" />
-        <string name="carrier_ims_user_agent">oneplus_[M]_[S]</string>
+        <string name="carrier_ims_user_agent">oplus_[M]_[S]</string>
         <string-array name="mccmnc" num="1">
             <item value="46605" />
         </string-array>
@@ -332,7 +332,7 @@
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="config_oplus_hide_2g_only" value="true" />
         <boolean name="support_video_conference_call_bool" value="false" />
-        <string name="carrier_ims_user_agent">oneplus_[M]_[A]_[S]_[D]</string>
+        <string name="carrier_ims_user_agent">oplus_[M]_[A]_[S]_[D]</string>
         <string-array name="mccmnc" num="1">
             <item value="50502" />
         </string-array>
@@ -559,7 +559,7 @@
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
-        <string name="carrier_ims_user_agent">oneplus_[M]_[S]</string>
+        <string name="carrier_ims_user_agent">oplus_[M]_[S]</string>
         <string-array name="mccmnc" num="2">
             <item value="22801" />
             <item value="29501" />

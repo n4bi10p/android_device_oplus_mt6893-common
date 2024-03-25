@@ -1,4 +1,4 @@
-service vendor.light-hal-2-0.denniz /vendor/bin/hw/android.hardware.light-service.denniz
+service vendor.light-hal-2-0.mt6893 /vendor/bin/hw/android.hardware.light-service.mt6893
     class hal
     user system
     group system

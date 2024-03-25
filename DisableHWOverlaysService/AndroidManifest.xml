@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.oneplus.rmx3031.disablehwoverlays"
+    package="org.oplus.mt6893.disablehwoverlays"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -10,7 +10,7 @@
         <receiver
             android:directBootAware="true"
             android:exported="true"    
-            android:name="org.oneplus.rmx3031.disablehwoverlays.OnLockedBootCompleteReceiver">
+            android:name="org.oplus.mt6893.disablehwoverlays.OnLockedBootCompleteReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -18,7 +18,7 @@
         </receiver>
         <service
             android:directBootAware="true"
-            android:name="org.oneplus.rmx3031.disablehwoverlays.DisableHWOverlaysService">
+            android:name="org.oplus.mt6893.disablehwoverlays.DisableHWOverlaysService">
         </service>
     </application>
 </manifest>
