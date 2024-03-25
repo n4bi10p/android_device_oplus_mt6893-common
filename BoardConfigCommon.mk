@@ -96,12 +96,6 @@ TARGET_KERNEL_CLANG_VERSION := r487747
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := KBUILD_BUILD_USER=$(shell whoami) KBUILD_BUILD_HOST=origin LLVM=1 LLVM_IAS=1 DEPMOD=depmod CC=clang
 
-# Modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := \
-    kheaders.ko \
-    lcd.ko \
-    tcp_westwood.ko
-
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
