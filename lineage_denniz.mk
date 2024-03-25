@@ -21,20 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/oneplus/denniz/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Official-ify
-ELIXIR_BUILD_TYPE := OFFICIAL
-IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_CALL_RECORDING := true
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_REMOVE_APERTURE_CAM := true
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_denniz
+PRODUCT_NAME := lineage_denniz
 PRODUCT_DEVICE := denniz
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus Nord 2 5G

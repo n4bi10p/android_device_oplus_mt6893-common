@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_denniz.mk
+    $(LOCAL_DIR)/lineage_denniz.mk
