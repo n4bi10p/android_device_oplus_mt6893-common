@@ -326,14 +326,6 @@
             <Limit name="concurrent-instances" max="10" />
             <Limit name="performance-point-640x480" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.encoder.secure" type="video/avc" >
-            <Limit name="size" min="160x128" max="1920x1088" />
-            <Limit name="alignment" value="16x16" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-1920x1088" value="30" />
-            <Feature name="special-codec" required="true" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.ENCODER.HEVC" />
             <Limit name="size" min="160x128" max="3840x2176" />
