@@ -1,0 +1,44 @@
+[
+  {
+    "repository": "oplus-ossi-development/android_kernel_oplus_mt6893",
+    "target_path": "kernel/oplus/mt6893",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/proprietary_vendor_oplus_mt6893-common",
+    "target_path": "vendor/oplus/mt6893-common",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/android_hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/android_hardware_mediatek_wlan",
+    "target_path": "hardware/mediatek/wlan",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/android_hardware_oplus",
+    "target_path": "hardware/oplus",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "LineageOS/android_hardware_lineage_compat",
+    "target_path": "hardware/lineage/compat",
+    "revision": "lineage-21",
+    "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/android_device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "revision": "lineage-21",
+    "remote": "github"
+  }
+]
