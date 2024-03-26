@@ -46,6 +46,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
+# Device-specific background service
+PRODUCT_PACKAGES += \
+    OssiDeviceService
+
 # Always use GPU for screen compositing
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_hwc_overlays=1
@@ -127,10 +131,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 # Enable whole-program R8 Java optimizations for SystemUI and system_server
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
-
-# DisableHWOverlaysService
-PRODUCT_PACKAGES += \
-    DisableHWOverlaysService
 
 # Display
 PRODUCT_PACKAGES += \
@@ -310,10 +310,6 @@ PRODUCT_PACKAGES += \
 # OplusDoze
 PRODUCT_PACKAGES += \
     OplusDoze
-
-# AODHelper
-PRODUCT_PACKAGES += \
-    AODHelper
 
 # MTK InCallService
 PRODUCT_PACKAGES += \

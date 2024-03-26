@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2024 The 2by2 Project
+     Copyright (C) 2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jp.project2by2.AODHelperService"
+    package="org.lineageos.ossi"
     android:sharedUserId="android.uid.system"
     android:versionCode="1"
     android:versionName="1.0"
@@ -23,16 +23,25 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="24" />
 
-    <application android:persistent="true">
+    <application android:label="@string/app_name">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver
+            android:directBootAware="true"
+            android:exported="true"
+            android:name=".OnLockedBootCompleteReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <service android:enabled="true" android:name=".DozeCustomService" />
+        <service
+            android:directBootAware="true"
+            android:name=".disablehwoverlays.DisableHWOverlaysService" />
+
+        <service
+            android:directBootAware="true"
+            android:name=".aodhelper.DozeCustomService" />
 
     </application>
 </manifest>

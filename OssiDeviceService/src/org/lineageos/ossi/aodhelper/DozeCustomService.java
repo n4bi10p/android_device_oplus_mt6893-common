@@ -1,9 +1,9 @@
 //
-//  Copyright (C) 2024 The 2by2 Project
+//  Copyright (C) 2024 The LineageOS Project
 //  SPDX-License-Identifier: Apache-2.0
 //
 
-package jp.project2by2.AODHelperService;
+package org.lineageos.ossi.aodhelper;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;

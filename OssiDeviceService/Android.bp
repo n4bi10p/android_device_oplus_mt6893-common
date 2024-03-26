@@ -1,27 +1,31 @@
 //
-//  Copyright (C) 2024 The 2by2 Project
+//  Copyright (C) 2024 The LineageOS Project
 //  SPDX-License-Identifier: Apache-2.0
 //
 
 android_app {
-    name: "AODHelper",
+    name: "OssiDeviceService",
+
     srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+
     certificate: "platform",
     platform_apis: true,
     optimize: {
         enabled: false,
     },
     required: [
-        "privapp-permissions-aodhelper",
+        "privapp-permissions-ossi-device",
     ],
+
     system_ext_specific: true,
     privileged: true,
 }
 
 prebuilt_etc {
-    name: "privapp-permissions-aodhelper",
+    name: "privapp-permissions-ossi-device",
     sub_dir: "permissions",
-    src: "privapp-permissions-aodhelper.xml",
+    src: "privapp-permissions-ossi-device.xml",
     filename_from_src: true,
     system_ext_specific: true,
 }
