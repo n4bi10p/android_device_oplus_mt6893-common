@@ -1254,6 +1254,10 @@ odm/lib64/vendor.oplus.hardware.orms@1.0.so
 vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
+# Perf
+vendor/lib/libmtkperf_client_vendor.so
+vendor/lib64/libmtkperf_client_vendor.so
+
 # Power
 vendor/lib/libpixelflinger.so
 vendor/lib64/libpowerhalwrap_vendor.so
