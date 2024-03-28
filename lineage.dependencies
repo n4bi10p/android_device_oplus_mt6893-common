@@ -24,7 +24,7 @@
     "remote": "github"
   },
   {
-    "repository": "oplus-ossi-development/android_hardware_oplus",
+    "repository": "LineageOS/android_hardware_oplus",
     "target_path": "hardware/oplus",
     "revision": "lineage-21",
     "remote": "github"
