@@ -69,6 +69,11 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf mt6893/libDR.so $(TARGET_OUT_VENDOR)/lib64/libDR.so
 	@ln -sf mt6893/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
 	@ln -sf mt6893/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
+	@ln -sf mt6893/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
+	@ln -sf mt6893/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
+	@ln -sf mt6893/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
+	@ln -sf mt6893/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
+	@ln -sf mt6893/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
 
 	$(hide) touch $@
 
