@@ -47,6 +47,10 @@ function blob_fixup {
            "$PATCHELF" --replace-needed libcodec2_hidl@1.1.so libcodec2_hidl-mtk@1.1.so "$2"
            "$PATCHELF" --replace-needed libcodec2_hidl@1.2.so libcodec2_hidl-mtk@1.2.so "$2"
             ;;
+        vendor/lib/libcodec2_mtk_c2store.so|\
+        vendor/lib64/libcodec2_mtk_c2store.so)
+            "${PATCHELF}" --replace-needed "libcodec2_soft_common.so" "libcodec2_soft_common-mtk.so" "${2}"
+            ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
             ;;
