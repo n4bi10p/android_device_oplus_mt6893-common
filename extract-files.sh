@@ -44,6 +44,8 @@ function blob_fixup {
            "$PATCHELF" --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "$2"
            "$PATCHELF" --replace-needed libcodec2_vndk.so libcodec2_vndk-mtk.so "$2"
            "$PATCHELF" --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl-mtk@1.0.so "$2"
+           "$PATCHELF" --replace-needed libcodec2_hidl@1.1.so libcodec2_hidl-mtk@1.1.so "$2"
+           "$PATCHELF" --replace-needed libcodec2_hidl@1.2.so libcodec2_hidl-mtk@1.2.so "$2"
             ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"

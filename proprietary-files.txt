@@ -1107,8 +1107,12 @@ vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 -vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
 -vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl-mtk@1.0.so
+-vendor/lib/libcodec2_hidl@1.1.so:vendor/lib/libcodec2_hidl-mtk@1.1.so
+-vendor/lib/libcodec2_hidl@1.2.so:vendor/lib/libcodec2_hidl-mtk@1.2.so
 -vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-mtk.so
 -vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl-mtk@1.0.so
+-vendor/lib64/libcodec2_hidl@1.1.so:vendor/lib64/libcodec2_hidl-mtk@1.1.so
+-vendor/lib64/libcodec2_hidl@1.2.so:vendor/lib64/libcodec2_hidl-mtk@1.2.so
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
