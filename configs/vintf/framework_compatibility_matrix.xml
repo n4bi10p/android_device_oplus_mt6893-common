@@ -160,6 +160,13 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.usb</name>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>arm.mali.platform</name>
         <interface>
             <name>ICompression</name>
