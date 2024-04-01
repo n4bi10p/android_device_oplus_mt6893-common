@@ -146,6 +146,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore
 
+# Display saturation adjust
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.sf.color_saturation?=1.13
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
