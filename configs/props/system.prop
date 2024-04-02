@@ -30,7 +30,8 @@ dalvik.vm.minidebuginfo=true
 dalvik.vm.dex2oat-minidebuginfo=true
 
 # Dexopt
-pm.dexopt.first-boot=verify
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
 pm.dexopt.boot-after-ota=verify
 pm.dexopt.post-boot=extract
 pm.dexopt.install=speed-profile
