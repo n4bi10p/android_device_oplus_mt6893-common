@@ -547,8 +547,3 @@ PRODUCT_PACKAGES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/mt6893-common/mt6893-common-vendor.mk)
-
-# Gapps
-ifneq ($(WITH_GMS), false)
-  $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-endif
