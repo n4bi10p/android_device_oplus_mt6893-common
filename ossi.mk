@@ -376,9 +376,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -500,7 +498,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-mediatekv2
+    android.hardware.usb-service.mediatek
 
 # Vibrator
 PRODUCT_PACKAGES += \
