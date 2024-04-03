@@ -12,9 +12,6 @@ ro.camera.sound.forced=0
 # Brand
 Build.BRAND=MTK
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Dalvik
 dalvik.vm.ps-min-first-save-ms=150000
 dalvik.vm.image-dex2oat-Xms=64m
