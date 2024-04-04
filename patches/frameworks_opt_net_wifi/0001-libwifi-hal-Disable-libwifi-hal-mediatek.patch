@@ -1,0 +1,25 @@
+From 042e8c1e6ec8b7fd9edc92b4cb6d7979fcf78f5b Mon Sep 17 00:00:00 2001
+From: lahaina <nattolecats@gmail.com>
+Date: Thu, 4 Apr 2024 18:05:03 +0900
+Subject: [PATCH] libwifi-hal: Disable libwifi-hal-mediatek
+
+---
+ libwifi_hal/Android.bp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libwifi_hal/Android.bp b/libwifi_hal/Android.bp
+index 9e75776..0426c00 100644
+--- a/libwifi_hal/Android.bp
++++ b/libwifi_hal/Android.bp
+@@ -168,7 +168,7 @@ wifi_cc_defaults {
+                 // whole_static_libs: ["libwifi-hal-mrvl"],
+             },
+             mediaTek: {
+-                defaults: ["libwifi-hal-mediatek"],
++                //defaults: ["libwifi-hal-mediatek"],
+             },
+             nxp: {
+                 whole_static_libs: ["//vendor/nxp/boreal/wifi:libwifi-hal-nxp"],
+-- 
+2.25.1
+
