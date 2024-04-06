@@ -55,7 +55,7 @@
     </string-array>
 
     <!-- Brightness range min for UDFPS dimming -->
-    <integer name="config_udfpsDimmingBrightnessMin">649</integer>
+    <integer name="config_udfpsDimmingBrightnessMin">300</integer>
 
     <!-- Brightness range max for UDFPS dimming -->
     <integer name="config_udfpsDimmingBrightnessMax">2047</integer>
