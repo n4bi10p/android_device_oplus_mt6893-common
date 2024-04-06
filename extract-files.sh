@@ -66,6 +66,9 @@ function blob_fixup {
         lib64/libem_support_jni.so)
             "${PATCHELF}" --add-needed "libjni_shim.so" "${2}"
             ;;
+        vendor/lib64/hw/sensors.mt6893.so)
+            "${PATCHELF}" --add-needed "libsensors_shim.so" "${2}"
+            ;;
         vendor/bin/mnld)
             ;&
         vendor/lib64/libaalservice.so)
