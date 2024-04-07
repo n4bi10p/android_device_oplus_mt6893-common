@@ -53,6 +53,7 @@ function blob_fixup {
             ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
+           "$PATCHELF" --replace-needed libssl.so libssl-v32.so "${2}"
             ;;
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
