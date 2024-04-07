@@ -70,6 +70,11 @@ genfscon sysfs /devices/platform/19031000.vpu_core1/wakeup/wakeup170            
 genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup132                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1a000000.camsys/wakeup/wakeup112                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19030000.vpu_core0/wakeup/wakeup169                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19030000.vpu_core1/wakeup/wakeup169                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11d04000.i2c8/i2c-8/8-0028/wakeup/wakeup139                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:oplus,track-charge/track/wakeup/wakeup145          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19032000.vpu_core2/wakeup/wakeup170                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19030000.vpu_core0/wakeup/wakeup168                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup130                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup/wakeup110                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup175                u:object_r:sysfs_wakeup:s0

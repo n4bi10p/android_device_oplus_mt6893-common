@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.sf.color_saturation?=1.13
+    persist.sys.sf.color_saturation?=1.37
 
 # DRM
 PRODUCT_PACKAGES += \
