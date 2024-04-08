@@ -1,20 +1,14 @@
-# Unpinned common blobs from RMX3031_11_F.24 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1700537403261 release-keys)
+# Unpinned common blobs from DN2103_11_F.45 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1684289553451 release-keys)
 
 # Extra
 odm/lib/libosensehalclient.so
-odm/lib/libosenseaidlhalclient.so
 odm/lib/vendor.oplus.hardware.osense.client@1.0.so
-odm/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
 odm/lib64/libosensehalclient.so
-odm/lib64/libosenseaidlhalclient.so
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
-odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
-vendor/lib/libnxp_extamp_intf.so
-vendor/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
-vendor/lib64/libnxp_extamp_intf.so
-vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
 system_ext/lib/vendor.oplus.hardware.osense.client@1.0.so
 system_ext/lib64/vendor.oplus.hardware.osense.client@1.0.so
+vendor/lib/libnxp_extamp_intf.so
+vendor/lib64/libnxp_extamp_intf.so
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -53,20 +47,24 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
 
 # Audio
-lib/vendor.oplus.hardware.performance-V1-ndk.so
-lib64/vendor.oplus.hardware.performance-V1-ndk.so
+lib/vendor.oplus.hardware.performance@1.0.so
+lib64/vendor.oplus.hardware.performance@1.0.so
+odm/bin/hw/vendor.oplus.hardware.performance@1.0-service
+odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc
+-odm/etc/vintf/manifest/manifest_oplus_performance.xml
 odm/firmware/awinic_haptic_gun_params.bin
 odm/firmware/awinic_haptic_params.bin
+-odm/framework/vendor.oplus.hardware.performance-V1.0-java.jar
 odm/lib/lib_aurisys_lvimfs.so
 odm/lib/libnxprecord.so
 odm/lib/libnxpsmartpaparser.so
 odm/lib/libnxpspeech.so
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/lib_aurisys_lvimfs.so
 odm/lib64/libnxprecord.so
 odm/lib64/libnxpsmartpaparser.so
 odm/lib64/libnxpspeech.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
@@ -112,7 +110,7 @@ vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
+vendor/lib/vendor.oplus.hardware.performance@1.0.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
@@ -156,7 +154,7 @@ vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.performance@1.0.so
 
 # Audio-configs
 odm/etc/audio/audio_device/common/audio_device.xml
@@ -630,8 +628,8 @@ odm/lib/libgf_hal_G3.so
 odm/lib/libgf_hal_G5.so
 odm/lib/libgf_hal_G6.so
 odm/lib/libgf_hal_G7.so
-odm/lib/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+odm/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
+odm/lib/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib64/hw/fingerprint.focaltech.default.so
 odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
@@ -646,13 +644,11 @@ odm/lib64/libgf_hal_G3.so
 odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
-odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
-odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/init.oplus.fingerprints.rc
-vendor/lib/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
+vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
+vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
 # GPS
 vendor/bin/mtk_agpsd
@@ -989,6 +985,7 @@ odm/lib/libdav1d.so.4
 odm/lib/libdla_loader.so
 odm/lib/libdpservice.so
 odm/lib/libffmpeg_omx.so
+odm/lib/libffmpeg_utils.so
 odm/lib/libormshalclient.so
 odm/lib/librpmbengclient.so
 odm/lib/libswresample.so
@@ -1001,6 +998,7 @@ odm/lib64/libdav1d.so.4
 odm/lib64/libdla_loader.so
 odm/lib64/libdla_loader_ins.so
 odm/lib64/libdpservice.so
+odm/lib64/libffmpeg_utils.so
 odm/lib64/libhwm-oplus.so
 odm/lib64/libormshalclient.so
 odm/lib64/librpmbengclient.so
@@ -1119,8 +1117,6 @@ vendor/lib64/libvpu5.so
 -vendor/lib64/libcodec2_hidl@1.2.so:vendor/lib64/libcodec2_hidl-mtk@1.2.so
 -vendor/lib64/libcodec2_hidl_plugin.so
 -vendor/lib64/libcodec2_soft_common.so:vendor/lib64/libcodec2_soft_common-mtk.so
-system_ext/lib/extractors/libffmpeg_extractor.so
-system_ext/lib64/extractors/libffmpeg_extractor.so
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
@@ -1323,20 +1319,12 @@ vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 
 # Radio
-odm/lib/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
+odm/lib/vendor.oplus.hardware.appradio@1.0.so
 odm/lib/vendor.oplus.hardware.mtkmodemaci@1.0.so
 odm/lib/vendor.oplus.hardware.radio-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.mtkmodemaci@1.0.so
 odm/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
-odm/lib64/libcommcenterutils.so
-odm/lib64/libcommcenterfw.so
-odm/lib64/libdmtpclient.so
-odm/lib64/lib-virtual-modem-protos.so
-odm/lib64/libdmtp-protos-lite.so
-vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/bin/hw/mtkfusionrild
 vendor/bin/AgentTest
 vendor/bin/ccci_mdinit
@@ -1351,7 +1339,7 @@ vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/muxreport
 vendor/bin/rttv
-vendor/etc/apdb/APDB_MT6885_S01__W2242
+vendor/etc/apdb/APDB_MT6885_S01__W2238
 vendor/etc/armnn_app.config
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
@@ -1493,6 +1481,7 @@ vendor/etc/bluetooth_offload_audio_policy_configuration.xml
 vendor/etc/bluetooth_ums_offload_audio_policy_configuration.xml
 vendor/etc/default_volume_tables.xml
 etc/public.libraries-mtk.txt
+etc/public.libraries-trustonic.txt
 lib/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
 lib/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
 lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
@@ -1506,7 +1495,7 @@ odm/lib/libtrustonic_keybox_ca.so
 odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib64/libneuron_runtime.so
 odm/lib64/libtrustonic_keybox_ca.so
-odm/lib64/vendor.oplus.hardware.engineer-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.engineer@1.0.so
 odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so
 odm/init.oplus.face.rc
 odm/init.oplus.seccommon.rc
@@ -1524,7 +1513,7 @@ vendor/bin/fuelgauged
 vendor/bin/ipsec_mon
 vendor/bin/loghidlvendorservice
 vendor/data/model/scene_detection.dla
-vendor/etc/apdb/APDB_MT6885_S01__W2242_ENUM
+vendor/etc/apdb/APDB_MT6885_S01__W2238_ENUM
 vendor/etc/init/atci_service.rc
 vendor/etc/init/init.oplus.cust.rc
 vendor/etc/init/tetheroffloadservice.rc
@@ -1586,6 +1575,15 @@ vendor/etc/factory.ini
 vendor/etc/nhw
 vendor/lib/mt6893/arm.graphics-ndk_platform.so
 vendor/lib/audio_common-aidl-cpp.so
+vendor/lib/gc02m1_mipi_raw_21127_IdxMgr.so
+vendor/lib/gc02m1_mipi_raw_21305_IdxMgr.so
+vendor/lib/gc02m1b_mipi_mono_21127_IdxMgr.so
+vendor/lib/imx355_mipi_raw_21305_IdxMgr.so
+vendor/lib/imx471_mipi_raw_21127_IdxMgr.so
+vendor/lib/imx615_mipi_raw_21305_IdxMgr.so
+vendor/lib/imx709_mipi_raw_21127_IdxMgr.so
+vendor/lib/imx709_mipi_raw_21305_IdxMgr.so
+vendor/lib/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib/lib3a.dce.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libaaa_ltm.so
@@ -1593,12 +1591,23 @@ vendor/lib/libaaa_ltmx.so
 vendor/lib/libainrcore.so
 vendor/lib/libaispq.so
 vendor/lib/libcustomer_testvision.so
-vendor/lib/libmidasserviceintf_aidl.so
+vendor/lib/libmidasserviceintf.so
 vendor/lib/librpc.so
+vendor/lib/ov50a_mipi_raw_21127_IdxMgr.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/mt6893/arm.graphics-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
+vendor/lib64/gc02m1_mipi_raw_21127_IdxMgr.so
+vendor/lib64/gc02m1_mipi_raw_21305_IdxMgr.so
+vendor/lib64/gc02m1b_mipi_mono_21127_IdxMgr.so
+vendor/lib64/imx355_mipi_raw_21305_IdxMgr.so
+vendor/lib64/imx471_mipi_raw_21127_IdxMgr.so
+vendor/lib64/imx615_mipi_raw_21305_IdxMgr.so
+vendor/lib64/imx709_mipi_raw_21127_IdxMgr.so
+vendor/lib64/imx709_mipi_raw_21305_IdxMgr.so
+vendor/lib64/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
+vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
 -vendor/priv-app/GpuGameDriver.mt6893/GpuGameDriver.mt6893.apk
