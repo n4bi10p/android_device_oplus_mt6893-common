@@ -356,7 +356,7 @@
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-640x480" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" >
+        <!--<MediaCodec name="c2.mtk.avc.encoder" type="video/avc" >
             <Alias name="OMX.MTK.VIDEO.ENCODER.AVC" />
             <Limit name="size" min="176x144" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
@@ -368,7 +368,7 @@
             <Feature name="can-swap-width-height" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1080" value="30" />
-        </MediaCodec>		
+        </MediaCodec>-->
         <MediaCodec name="c2.android.h263.encoder" type="video/3gpp">
             <Alias name="OMX.google.h263.encoder" />
             <!-- profiles and levels:  ProfileBaseline : Level45 -->
