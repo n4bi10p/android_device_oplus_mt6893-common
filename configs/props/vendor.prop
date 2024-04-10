@@ -326,3 +326,8 @@ vendor.connsys.driver.ready=no
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.ap_info_monitor=0
 ro.vendor.wifi.sap.concurrent.iface=ap1
+
+#Stagefright
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=512
+debug.media.codec2=2
