@@ -156,7 +156,7 @@
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1280x720" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" >
+        <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" rank="1000">
             <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
             <Limit name="size" min="64x64" max="2048x1088" />
             <Quirk name="wants-NAL-fragments" />
