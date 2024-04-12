@@ -47,8 +47,3 @@ def OTA_InstallEnd(info, incremental):
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental)
   AddImage(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system", incremental)
   AddImage(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor", incremental)
-
-  fw_cmd = ('ui_print("Flashing new recovery image...");\n' + 
-            'package_extract_file("recovery.img", "/dev/block/by-name/recovery");')
-
-  info.script.AppendExtra(fw_cmd)
