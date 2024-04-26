@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE=camera
+DEVICE=mt6893-common
 VENDOR=oplus
 
 export originalPath=$(pwd)
@@ -26,5 +26,3 @@ applyPatches() {
 applyPatches
 
 echo -e "\e[36m* Apply patches done!\e[m"
-
-sleep 2
