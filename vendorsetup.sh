@@ -15,10 +15,3 @@ fi
 # KernelSU
 KSU=kernel/oplus/mt6893/KernelSU
 rm -rf $KSU && git clone https://github.com/tiann/KernelSU $KSU
-
-# Bypass API modified validations
-export DISABLE_STUB_VALIDATION=true
-
-# Move it right directory
-mv device/oneplus/denniz device/oplus/denniz &> /dev/null
-mv device/oplus/RMX3031 device/oplus/cupida &> /dev/null
