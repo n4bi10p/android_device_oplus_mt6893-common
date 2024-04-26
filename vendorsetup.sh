@@ -15,3 +15,6 @@ fi
 # KernelSU
 KSU=kernel/oplus/mt6893/KernelSU
 rm -rf $KSU && git clone https://github.com/tiann/KernelSU $KSU
+
+# Source patches
+bash device/oplus/mt6893-common/patches/apply.sh
