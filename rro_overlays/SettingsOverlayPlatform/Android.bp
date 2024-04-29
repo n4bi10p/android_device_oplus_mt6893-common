@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "FrameworkResOverlay",
+    name: "SettingsOverlayPlatform",
     sdk_version: "current",
     resource_dirs: ["res"],
-	product_specific: true
+    product_specific: true
 }

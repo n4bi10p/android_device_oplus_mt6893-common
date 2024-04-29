@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ancient.settingsoverlay">
+    package="com.ancient.settingsoverlay.mt6893">
 
     <application android:hasCode="false" />
     <overlay android:targetPackage="com.android.settings"

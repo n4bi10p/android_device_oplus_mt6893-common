@@ -289,9 +289,9 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworkResOverlay \
-    SystemUIOverlay \
-    SettingsOverlay \
+    FrameworkResOverlayPlatform \
+    SystemUIOverlayPlatform \
+    SettingsOverlayPlatform \
     TelephonyOverlay \
     CarrierConfigOverlay
 
