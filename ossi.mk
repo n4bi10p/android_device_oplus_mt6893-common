@@ -49,6 +49,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_hwc_overlays=1
 
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
