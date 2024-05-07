@@ -3,9 +3,7 @@
 DEVICE=mt6893-common
 VENDOR=oplus
 
-export originalPath=$(pwd)
-
-if [ $(pwd) == "${ANDROID_BUILD_TOP}" ] ; then export originalPath=$(pwd)/device/$VENDOR/$DEVICE/patches/ ; fi
+export originalPath=$(pwd)/device/$VENDOR/$DEVICE/patches/
 
 applyPatches() {
     export counter=0
