@@ -76,6 +76,7 @@
             <Limit name="sample-rate" ranges="8000-96000" />
             <Limit name="bitrate" range="1-10000000" />
         </MediaCodec>
+	<MediaCodec name="OMX.google.vorbis.decoder" type="audio/raw" update="true" rank="1"/>
         <MediaCodec name="c2.android.flac.decoder" type="audio/flac">
             <Alias name="OMX.google.flac.decoder" />
             <Limit name="channel-count" max="8" />
