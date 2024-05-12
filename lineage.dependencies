@@ -40,5 +40,11 @@
     "target_path": "device/mediatek/sepolicy_vndr",
     "revision": "lineage-21",
     "remote": "github"
+  },
+  {
+    "repository": "oplus-ossi-development/android_packages_apps_OneplusParts",
+    "target_path": "packages/apps/OneplusParts",
+    "revision": "lineage-21",
+    "remote": "github"
   }
 ]
