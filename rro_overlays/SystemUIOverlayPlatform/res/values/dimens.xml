@@ -14,5 +14,8 @@
     <dimen name="tri_state_up_dialog_position_l">410.0px</dimen>
     <dimen name="tri_state_up_dialog_position_deep">21.0px</dimen>
     <dimen name="tri_state_up_dialog_position_deep_land">21.0px</dimen>
+    
 
+    <dimen name="status_bar_padding_start">0dp</dimen>
+    <dimen name="status_bar_padding_end">2dp</dimen>
 </resources>
