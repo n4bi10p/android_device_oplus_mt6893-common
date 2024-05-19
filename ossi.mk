@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
-    disable_configstore
+    disable_configstore \
+    vndservicemanager
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
