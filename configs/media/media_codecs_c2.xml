@@ -134,29 +134,6 @@
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-1280x720" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
-            <Limit name="size" min="64x64" max="4096x2176" />
-            <Quirk name="wants-NAL-fragments" />
-            <Feature name="adaptive-playback"/>
-            <!-- #ifdef OPLUS_BUG_STABILITY-->
-            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
-            <Feature name="can-swap-width-height"/>
-            <!-- #endif OPLUS_BUG_STABILITY-->
-            <Limit name="concurrent-instances" max="15" />
-            <Limit name="performance-point-3840x2160" value="30" />
-            <Limit name="performance-point-1280x719" value="180" />
-            <Limit name="performance-point-1280x720" value="120" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC.secure" />
-            <Limit name="size" min="64x64" max="1920x1088" />
-            <Quirk name="wants-NAL-fragments" />
-            <Feature name="secure-playback" required="true" />
-            <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="1" />
-            <Limit name="performance-point-1920x1088" value="30" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="4096x2176" />
