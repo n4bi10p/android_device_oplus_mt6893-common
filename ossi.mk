@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libdynproc \
     libhapticgenerator \
-    libstagefright_foundation
+    libstagefright_foundation \
+    libaudiospdif
 
 # Audio
 PRODUCT_COPY_FILES += \
