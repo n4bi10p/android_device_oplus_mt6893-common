@@ -227,6 +227,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6893
 
+#OMX
+PRODUCT_PACKAGES += \
+       android.hardware.media.omx@1.0-service \
+       libstagefrighthw \
+       libstagefright_omx.vendor
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
