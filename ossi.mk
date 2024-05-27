@@ -231,6 +231,21 @@ PRODUCT_PACKAGES += \
 #OMX
 PRODUCT_PACKAGES += \
        android.hardware.media.omx@1.0-service \
+       android.hardware.media.c2@1.1.vendor \
+       android.hardware.media.c2@1.2.vendor \
+       libcodec2_vndk.vendor \
+       libcodec2_soft_avcdec \
+       libcodec2_soft_avcenc \
+       libcodec2_soft_h263dec \
+       libcodec2_soft_h263enc \
+       libcodec2_soft_mpeg4dec \
+       libcodec2_soft_mpeg4enc \
+       libcodec2_soft_vp8dec \
+       libcodec2_soft_vp8enc \
+       libcodec2_soft_vp9dec \
+       libcodec2_soft_vp9enc \
+       libcodec2_soft_hevcdec \
+       libcodec2_soft_hevcenc \
        libstagefrighthw \
        libstagefright_omx.vendor
 
