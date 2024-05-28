@@ -124,3 +124,8 @@ persist.vendor.wfc.sys_wfc_support=1
 
 # Zygote
 ro.zygote.preload.enable=0
+
+# Radio VoNR Calling
+persist.radio.is_vonr_enabled_0=true
+persist.radio.is_vonr_enabled_1=true
+persist.vendor.vonr_setting_support=1
