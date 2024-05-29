@@ -419,4 +419,6 @@
     -->
     <bool name="config_bg_current_drain_auto_restrict_abusive_apps">true</bool>
 
+     <!-- True if the device supports Sustained Performance Mode -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 </resources>
