@@ -81,7 +81,6 @@ ro.mediatek.version.build.branch=
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_cta_set=1
 ro.vendor.qti.va_aosp.support=0
-debug.stagefright.c2inputsurface=-1
 debug.atrace.tags.enableflags=0
 persist.traced.enable=1
 persist.vendor.vzw_device_type=0
