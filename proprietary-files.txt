@@ -636,6 +636,9 @@ odm/init.oplus.fingerprints.rc
 vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
+# Firmware (Connectivity) - from A145PXXU1AWA3
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9605
+
 # GPS
 vendor/bin/mtk_agpsd
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
