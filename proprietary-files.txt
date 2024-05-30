@@ -981,7 +981,6 @@ odm/lib64/libdav1d.so.4
 odm/lib64/libdla_loader.so
 odm/lib64/libdla_loader_ins.so
 odm/lib64/libdpservice.so
-odm/lib64/libffmpeg_utils.so
 odm/lib64/libhwm-oplus.so
 odm/lib64/libormshalclient.so
 odm/lib64/librpmbengclient.so
@@ -1088,14 +1087,10 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
--vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
--vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl-mtk@1.0.so
 -vendor/lib/libcodec2_hidl@1.1.so:vendor/lib/libcodec2_hidl-mtk@1.1.so
 -vendor/lib/libcodec2_hidl@1.2.so:vendor/lib/libcodec2_hidl-mtk@1.2.so
 vendor/lib/libcodec2_hidl_plugin.so
 -vendor/lib/libcodec2_soft_common.so:vendor/lib/libcodec2_soft_common-mtk.so
--vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-mtk.so
--vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl-mtk@1.0.so
 -vendor/lib64/libcodec2_hidl@1.1.so:vendor/lib64/libcodec2_hidl-mtk@1.1.so
 -vendor/lib64/libcodec2_hidl@1.2.so:vendor/lib64/libcodec2_hidl-mtk@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
@@ -1363,7 +1358,6 @@ vendor/lib64/liblpcnr.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmsnr.so
 vendor/lib64/libmtcloader.so
@@ -1547,7 +1541,6 @@ vendor/etc/md/cacerts/tls/xcap.crt
 vendor/etc/md/cacerts/tls/xcap_KPN.crt
 vendor/etc/permissions/com.mediatek.hardware.vow.xml
 vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/FV-SAM-MTK2.dat
@@ -1592,6 +1585,7 @@ vendor/lib64/imx709_mipi_raw_21127_IdxMgr.so
 vendor/lib64/imx709_mipi_raw_21305_IdxMgr.so
 vendor/lib64/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/libPolarrRender.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
