@@ -380,7 +380,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
-$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
+$(call inherit-product, $(COMMON_PATH)/power-libperfmgr/power-libperfmgr.mk)
 
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
