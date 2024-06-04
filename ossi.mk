@@ -450,6 +450,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6893.rc \
     init.connectivity.rc \
     init.modem.rc \
+    init.oplus.rc \
     init.mt6893.rc \
     init.mt6893.usb.rc \
     init.mt6893.power.rc \
