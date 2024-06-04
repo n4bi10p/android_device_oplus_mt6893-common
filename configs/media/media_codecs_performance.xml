@@ -85,12 +85,6 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="c2.mtk.h263.encoder" type="video/3gpp" update="true">
             <Limit name="measured-frame-rate-176x144" range="124-273" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="66-145" />
-            <Limit name="measured-frame-rate-720x480" range="142-312" />
-            <Limit name="measured-frame-rate-1280x720" range="64-141" />
-            <Limit name="measured-frame-rate-1920x1080" range="30-66" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-320x240" range="98-216" />
             <Limit name="measured-frame-rate-720x480" range="40-88" />
