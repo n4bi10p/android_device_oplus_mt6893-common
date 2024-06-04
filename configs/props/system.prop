@@ -135,3 +135,8 @@ persist.vendor.vonr_setting_support=1
 persist.service.adb.enable=1                                                    
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
+
+#Camera
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enabled=1
+ro.camera.sound.forced=0
