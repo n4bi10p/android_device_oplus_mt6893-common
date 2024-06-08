@@ -42,9 +42,9 @@ on init
     chmod 0666 /dev/stune/io/tasks
 
     # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
@@ -64,3 +64,8 @@ on enable-low-power
 
 on property:sys.boot_completed=1
     trigger enable-low-power
+    # Power hal
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us

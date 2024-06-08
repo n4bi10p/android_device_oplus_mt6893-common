@@ -310,8 +310,8 @@
       "Name": "TAUclampMin",
       "Path": "/dev/stune/top-app/schedtune.uclamp.min",
       "Values": [
-        "100",
-        "40",
+        "50",
+        "10",
         "0"
       ],
       "ResetOnInit": true
@@ -438,7 +438,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
-      "Value": "100"
+      "Value": "10"
     },
     {
       "PowerHint": "INTERACTION",
@@ -504,7 +504,7 @@
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
       "Duration": 3000,
-      "Value": "100"
+      "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",

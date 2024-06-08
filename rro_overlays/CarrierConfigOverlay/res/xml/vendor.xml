@@ -60,6 +60,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="CMCC">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="mtk_key_restore_address_for_ims_conference_participants" value="true" />
@@ -74,6 +75,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="CT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="support_video_conference_call_bool" value="true" />
@@ -87,6 +89,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="CU">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_oplus_erlvt_off_bool" value="false" />
@@ -99,6 +102,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="3HK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -109,6 +113,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="CMHK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -119,6 +124,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="HKT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -128,6 +134,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SMARTONE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -137,6 +144,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="CHT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="oplus.operator.ringtone" value="2" />
@@ -147,6 +155,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="FET">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -158,6 +167,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TWM">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -169,6 +179,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="APTG">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -179,6 +190,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TST">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_hide_2g_only" value="true" />
         <string-array name="mccmnc" num="1">
@@ -186,6 +198,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SINGTEL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="oplus.operator.ringtone" value="1" />
@@ -197,6 +210,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="STARHUB">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -209,6 +223,7 @@
         <string-array name="gsm_nonroaming_networks_string_array" num="1">
             <item value="46697" />
         </string-array>
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -218,6 +233,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="M1">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -227,6 +243,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TPG">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -239,6 +256,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="DIGI">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="oplus_ussd_over_ims" value="true" />
@@ -257,6 +275,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="YES">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_lte_preferred_for_second_slot" value="true" />
         <boolean name="config_oplus_dual_lte_available_bool" value="true" />
@@ -269,12 +288,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="WEBE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="502153" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Celcom">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="2">
             <item value="50213" />
@@ -289,6 +310,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Maxis">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -298,6 +320,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="UMobile">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -306,6 +329,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TELSTRA">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -322,6 +346,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="OPTUS">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -338,6 +363,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -364,6 +390,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="2DEGREE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -382,6 +409,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SPARK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <int name="oplus.operator.ringtone" value="4" />
         <boolean name="oplus_use_local_holdtone_for_volte_call" value="true" />
@@ -393,6 +421,7 @@
         </string-array>
     </carrier_config>
     <carrier_config imsi="53005204" operator="Skinny">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="false" />
@@ -401,6 +430,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VDF-NZ">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="support_video_conference_call_bool" value="true" />
@@ -410,6 +440,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="AIS">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -421,6 +452,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="DTAC">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -432,6 +464,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TRUE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -442,6 +475,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="GLOBE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -450,6 +484,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SMART">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -458,6 +493,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="DITO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -465,6 +501,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Vinaphone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="oplus_ussd_over_ims" value="true" />
         <string-array name="mccmnc" num="1">
@@ -472,6 +509,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VIETTEL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="false" />
         <string-array name="mccmnc" num="1">
@@ -479,6 +517,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VIETNAMOBILE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <string-array name="mccmnc" num="1">
@@ -486,18 +525,21 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TELENOR">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="41406" />
         </string-array>
     </carrier_config>
     <carrier_config operator="MYTEL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="41409" />
         </string-array>
     </carrier_config>
     <carrier_config operator="ZONG">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -505,6 +547,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="TELENOR">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -512,6 +555,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Robi">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="2">
             <item value="47002" />
@@ -519,6 +563,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Grameenphone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="disable_cnap_bool" value="true" />
@@ -527,12 +572,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mobitel">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="41301" />
         </string-array>
     </carrier_config>
     <carrier_config operator="DIALOG">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -541,6 +588,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="STC">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -548,6 +596,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="ZAIN">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -555,6 +604,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SWISSCOM">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -566,6 +616,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SUNRISE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -575,6 +626,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SALT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -584,6 +636,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Yoigo">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -591,6 +644,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Spain-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="2">
@@ -599,6 +653,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Spain-Movistar">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -636,6 +691,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Spain-ORANGE" spn="Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -682,6 +738,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Proximus">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -693,6 +750,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Telenet">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -702,6 +760,7 @@
         </string-array>
     </carrier_config>
     <carrier_config imsi="20601889" operator="Telenet">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -713,6 +772,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Belgium-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -722,6 +782,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="France-Bouygues">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -732,6 +793,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="France-SFR">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -754,6 +816,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="France-ORANGE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -777,6 +840,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Italy-TIM">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -784,6 +848,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Italy-Windtre">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="2">
@@ -792,6 +857,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Italy-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <boolean name="config_oplus_show_3g_only" value="true" />
@@ -808,6 +874,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="UK-EE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -824,6 +891,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="UK-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="false" />
@@ -832,6 +900,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="3 UK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -860,6 +929,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="O2 UK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -869,6 +939,7 @@
         </string-array>
     </carrier_config>
     <carrier_config gid1="508" operator="GIFFGAFF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="config_oplus_sms_ims_support_bool" value="false" />
@@ -877,12 +948,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="SKY">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="23457" />
         </string-array>
     </carrier_config>
     <carrier_config operator="EIR">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -892,6 +965,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Ireland-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -903,6 +977,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Netherland-TELE2">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -913,6 +988,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Netherland-KPN">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -924,6 +1000,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Netherland-Tmobile">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -935,6 +1012,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Netherland-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -944,6 +1022,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Poland-Play">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -956,6 +1035,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Poland-Plus">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -966,6 +1046,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Poland-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -974,6 +1055,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Romania-Digi">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -982,6 +1064,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Romania-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -991,6 +1074,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Romania-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1002,6 +1086,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="MEO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1009,6 +1094,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Portugal NOS">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="false" />
@@ -1020,6 +1106,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Portugal-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1027,6 +1114,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="BASE">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -1036,6 +1124,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Telenet">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1045,6 +1134,7 @@
         </string-array>
     </carrier_config>
     <carrier_config imsi="20601889" operator="Telenet">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1056,6 +1146,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Belgium-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1065,6 +1156,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Germany-Vodafone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1076,6 +1168,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Germany-Tmobile">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1088,6 +1181,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Germany-Telefonica">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1103,6 +1197,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Lux-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1111,6 +1206,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Tango">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1119,6 +1215,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="POST">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1128,12 +1225,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mol-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="25901" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Croatia-DT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1143,12 +1242,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Czech-O2">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="23002" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Czech-VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1160,6 +1261,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Czech-DT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1169,6 +1271,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Greece-VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1178,6 +1281,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Greece-TMobile">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1187,6 +1291,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Hungary-VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -1195,6 +1300,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Hungary-DT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1204,18 +1310,21 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Slovakia-O2">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="23106" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Slovakia-Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="23101" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Slovakia-DT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1223,6 +1332,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Vivacom">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1230,6 +1340,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Russia-Megafon">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1237,6 +1348,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Russia-MTS">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1250,18 +1362,21 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Beeline">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="25099" />
         </string-array>
     </carrier_config>
     <carrier_config operator="Tele2">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="25020" />
         </string-array>
     </carrier_config>
     <carrier_config operator="JIO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -1312,6 +1427,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1349,6 +1465,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="IDEA">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -1394,6 +1511,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="AIRTEL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -1436,6 +1554,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="BSNL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="oplus_support_video_cf_bool" value="true" />
@@ -1467,6 +1586,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="ETISALAT">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1475,12 +1595,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="DU">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="42403" />
         </string-array>
     </carrier_config>
     <carrier_config operator="STC">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1490,6 +1612,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="ZAIN KSA">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="false" />
@@ -1499,6 +1622,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="MOBILY">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1507,6 +1631,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Qatar-VDF">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1515,6 +1640,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Qatar-Ooredoo">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -1522,6 +1648,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="OOREDOO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -1530,6 +1657,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="ZAIN">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1540,6 +1668,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VIVA">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
@@ -1551,6 +1680,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="BATELCO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1559,6 +1689,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="VIVA">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1567,12 +1698,14 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="ZAIN">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="42602" />
         </string-array>
     </carrier_config>
     <carrier_config operator="OMANTEL">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="false" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
@@ -1581,6 +1714,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Pelephone">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -1589,6 +1723,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mexico-Telcel">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -1602,6 +1737,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mexico-AT-T">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1611,6 +1747,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mexico-Movistar">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="2">
             <item value="33403" />
@@ -1618,6 +1755,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Mexico-ALTAN">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="334140" />
@@ -1638,6 +1776,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Spain-ORANGE" spn="Orange">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
@@ -1743,6 +1882,7 @@
     </carrier_config>
     <!-- JP Carriers -->
     <carrier_config operator="SOFTBANK">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="config_oplus_hide_2g_only" value="true" />
@@ -1756,6 +1896,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="DOCOMO">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
         <string-array name="mccmnc" num="1">
@@ -1763,6 +1904,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="KDDI">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="config_oplus_support_volte_only_bool" value="true" />
@@ -1775,6 +1917,7 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="Rakuten Mobile(MNO)">
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="support_ims_conference_call_bool" value="false" />
         <boolean name="carrier_supports_ss_over_ut_bool" value="false" />

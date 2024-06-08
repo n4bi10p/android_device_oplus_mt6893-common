@@ -81,7 +81,6 @@ ro.mediatek.version.build.branch=
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_cta_set=1
 ro.vendor.qti.va_aosp.support=0
-debug.stagefright.c2inputsurface=-1
 debug.atrace.tags.enableflags=0
 persist.traced.enable=1
 persist.vendor.vzw_device_type=0
@@ -103,6 +102,8 @@ vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 ro.vendor.mtk_telephony_add_on_policy=0
 ro.telephony.sim.count=2
+persist.radio.multisim.config=dsds
+persist.radio.hvolte.enable=1
 
 # Storage
 persist.sys.fuse.passthrough.enable=true
@@ -124,3 +125,18 @@ persist.vendor.wfc.sys_wfc_support=1
 
 # Zygote
 ro.zygote.preload.enable=0
+
+# Radio VoNR Calling
+persist.radio.is_vonr_enabled_0=true
+persist.radio.is_vonr_enabled_1=true
+persist.vendor.vonr_setting_support=1
+
+#ADB
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+
+#Camera
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enabled=1
+ro.camera.sound.forced=0

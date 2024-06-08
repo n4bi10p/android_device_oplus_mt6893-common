@@ -39,13 +39,8 @@ function blob_fixup {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
-           "$PATCHELF" --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_vndk.so libcodec2_vndk-mtk.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl-mtk@1.0.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_hidl@1.1.so libcodec2_hidl-mtk@1.1.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_hidl@1.2.so libcodec2_hidl-mtk@1.2.so "$2"
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/lib/libcodec2_mtk_c2store.so|\
         vendor/lib64/libcodec2_mtk_c2store.so)
@@ -57,6 +52,10 @@ function blob_fixup {
             ;;
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
+            ;;
+	vendor/lib64/libmtkcam_featurepolicy.so)
+            # evaluateCaptureConfiguration()
+            sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;
         vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"

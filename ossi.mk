@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libdynproc \
     libhapticgenerator \
-    libstagefright_foundation
+    libstagefright_foundation \
+    libaudiospdif
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -100,6 +101,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libshims/libldacBT_bco:$(TARGET_COPY_OUT_VENDOR)/lib/libldacBT_bco.so \
+    $(LOCAL_PATH)/libshims/libldacBT_bco:$(TARGET_COPY_OUT_VENDOR)/lib64/libldacBT_bco.so
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -143,7 +148,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
-    disable_configstore
+    disable_configstore \
+    vndservicemanager
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
@@ -227,6 +233,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6893
 
+#OMX
+PRODUCT_PACKAGES += \
+       android.hardware.media.omx@1.0-service \
+       android.hardware.media.c2@1.1.vendor \
+       android.hardware.media.c2@1.2.vendor \
+       libcodec2_vndk.vendor \
+       libcodec2_soft_avcdec \
+       libcodec2_soft_avcenc \
+       libcodec2_soft_h263dec \
+       libcodec2_soft_h263enc \
+       libcodec2_soft_mpeg4dec \
+       libcodec2_soft_mpeg4enc \
+       libcodec2_soft_vp8dec \
+       libcodec2_soft_vp8enc \
+       libcodec2_soft_vp9dec \
+       libcodec2_soft_vp9enc \
+       libcodec2_soft_hevcdec \
+       libcodec2_soft_hevcenc \
+       libstagefrighthw \
+       libstagefright_omx.vendor
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
@@ -292,6 +319,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nfc_features.xml
 
 # Overlays
+$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPlatform \
     SystemUIOverlayPlatform \
@@ -423,6 +451,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6893.rc \
     init.connectivity.rc \
     init.modem.rc \
+    init.oplus.rc \
     init.mt6893.rc \
     init.mt6893.usb.rc \
     init.mt6893.power.rc \
@@ -520,8 +549,10 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
+    prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libssl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-v32.so
 
