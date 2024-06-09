@@ -251,7 +251,6 @@ PRODUCT_PACKAGES += \
        libcodec2_soft_vp9enc \
        libcodec2_soft_hevcdec \
        libcodec2_soft_hevcenc \
-       libstagefrighthw \
        libstagefright_omx.vendor
 
 # Media
