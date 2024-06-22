@@ -195,7 +195,7 @@
             <Limit name="measured-frame-rate-1280x720" range="60-90" />
             <Limit name="measured-frame-rate-1920x1080" range="40-60" />
         </MediaCodec>
-        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
+        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true" rank="1">
             <Alias name="OMX.google.h264.decoder" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
