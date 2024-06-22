@@ -206,6 +206,20 @@
             <Limit name="bitrate" range="1-40000000" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
+	<MediaCodec name="c2.mtk.avc.decoder" type="video/avc" rank="1000">
+            <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
+            <Limit name="size" min="64x64" max="4096x2176" />
+            <Quirk name="wants-NAL-fragments" />
+            <Feature name="adaptive-playback"/>
+            <!-- #ifdef OPLUS_BUG_STABILITY-->
+            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
+            <Feature name="can-swap-width-height"/>
+            <!-- #endif OPLUS_BUG_STABILITY-->
+            <Limit name="concurrent-instances" max="15" />
+            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-1280x719" value="180" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
             <Alias name="OMX.google.hevc.decoder" />
             <Limit name="alignment" value="2x2" />
