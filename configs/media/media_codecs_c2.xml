@@ -361,7 +361,7 @@
             </Variant>
             <Feature name="intra-refresh" />
         </MediaCodec>
-	<MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" enabled="false">
+	<MediaCodec name="c2.android.hevc.encoder" type="video/hevc" variant="!slow-cpu">
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
             <Limit name="size" min="2x2" max="512x512" />
             <Limit name="alignment" value="2x2" />
@@ -373,6 +373,7 @@
             <Limit name="complexity" range="0-10"  default="0" />
             <Limit name="quality" range="0-100"  default="80" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
+            <Attribute name="software-codec" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.heif.encoder" type="image/vnd.android.heic" >
             <Alias name="OMX.MTK.VIDEO.ENCODER.HEIF" />
@@ -427,19 +428,6 @@
                 <Limit name="block-count" range="1-3600" /> <!-- max 1280x720 -->
                 <Limit name="bitrate" range="1-20000000" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
-        </MediaCodec>
-        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" enabled="false">
-            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
-            <Limit name="size" min="2x2" max="512x512" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="8x8" />
-            <Limit name="block-count" range="1-4096" /> <!-- max 512x512 -->
-            <Limit name="blocks-per-second" range="1-122880" />
-            <Limit name="frame-rate" range="1-120" />
-            <Limit name="bitrate" range="1-10000000" />
-            <Limit name="complexity" range="0-10"  default="0" />
-            <Limit name="quality" range="0-100"  default="80" />
-            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
         </MediaCodec>
         <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" enabled="false">
             <Alias name="OMX.google.vp9.encoder" />
