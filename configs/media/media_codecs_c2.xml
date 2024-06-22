@@ -341,6 +341,26 @@
             <Limit name="performance-point-1920x1088" value="30" />
             <Feature name="special-codec" required="true" />
         </MediaCodec>-->
+        	<MediaCodec name="c2.android.avc.encoder" type="video/avc" variant="slow-cpu,!slow-cpu">
+            <Alias name="OMX.google.h264.encoder" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Variant name="!slow-cpu">
+                <Limit name="size" min="16x16" max="2048x2048" />
+                <!-- profiles and levels:  ProfileBaseline : Level41 -->
+                <Limit name="block-count" range="1-8192" /> <!-- max 2048x1024 -->
+                <Limit name="blocks-per-second" range="1-245760" />
+                <Limit name="bitrate" range="1-12000000" />
+            </Variant>
+            <Variant name="slow-cpu">
+                <Limit name="size" min="16x16" max="1808x1808" />
+                <!-- profiles and levels:  ProfileBaseline : Level3 -->
+                <Limit name="block-count" range="1-1620" />
+                <Limit name="blocks-per-second" range="1-40500" />
+                <Limit name="bitrate" range="1-2000000" />
+            </Variant>
+            <Feature name="intra-refresh" />
+        </MediaCodec>
 	<MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" enabled="false">
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
             <Limit name="size" min="2x2" max="512x512" />
