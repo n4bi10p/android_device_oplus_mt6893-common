@@ -37,3 +37,4 @@ set_prop(hal_audio_default, vendor_audio_tuning_prop)
 allow hal_audio_default persist_data_file:dir r_dir_perms;
 binder_call(hal_audio_default, hal_performance_oplus)
 allow hal_audio_default hal_performance_oplus_hwservice:hwservice_manager find;
+allow hal_power_default property_socket:sock_file write
